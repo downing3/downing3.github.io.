@@ -1,5 +1,5 @@
 import React from "react";
-import resume from "./Resume.pdf"
+import resume from "../Assets/Files/Resume.pdf"
 
 function Footer() {
   return (

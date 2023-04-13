@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import backgroundImage from './main.png';
+import backgroundImage from '../Assets/Images/main.png';
 
 function Homepage() {
   return (

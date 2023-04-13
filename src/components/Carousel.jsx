@@ -1,17 +1,13 @@
 import React from "react";
-import beachImg from "./beach.png";
-import commonsImg from "./commons.png";
-import snowImg from "./snow.png";
-import fijiBeach from "./fijiBeach.png";
-import fiji from "./fiji.png";
-import Fbeach from "./Fbeach.png";
-import highlands from "./highlands.png";
-import clothes from "./clothes.png";
-import sky from "./sky.png";
-
-
-
-
+import beachImg from "../Assets/Images/beach.png";
+import commonsImg from "../Assets/Images/commons.png";
+import snowImg from "../Assets/Images/snow.png";
+import fijiBeach from "../Assets/Images/fijiBeach.png";
+import fiji from "../Assets/Images/fiji.png";
+import Fbeach from "../Assets/Images/Fbeach.png";
+import highlands from "../Assets/Images/highlands.png";
+import clothes from "../Assets/Images/clothes.png";
+import sky from "../Assets/Images/sky.png";
 
 
 
