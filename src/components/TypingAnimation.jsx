@@ -4,8 +4,6 @@ const TypingAnimation = () => {
   return (
     <TypeAnimation
       sequence={[
-        'creator', // Types 'One'
-        1500, // Waits 1s
         'student', // Deletes 'One' and types 'Two'
         1500, // Waits 2s
         'sister', // Types 'Three' without deleting 'Two'
