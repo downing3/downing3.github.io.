@@ -12,13 +12,14 @@ const TypingAnimation = () => {
         1500, // Waits 2s
         'daughter', // Types 'Three' without deleting 'Two'
         1500, // Waits 2s
+        'creator', // Types 'One'
+        1500, // Waits 1s
         () => {
           console.log('Sequence completed'); // Place optional callbacks anywhere in the array
         }
       ]}
       wrapper="span"
       cursor={true}
-      repeat={2}
      style={{
   fontSize: '2em',
   display: 'inline-block',
