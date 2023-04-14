@@ -18,7 +18,7 @@ const TypingAnimation = () => {
       ]}
       wrapper="span"
       cursor={true}
-      repeat={Infinity}
+      repeat={2}
      style={{
   fontSize: '2em',
   display: 'inline-block',
