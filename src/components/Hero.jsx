@@ -13,17 +13,17 @@ function Hero() {
       </div>
       <div className="flex flex-col space-y-4">
         <Link to="/about">
-          <button className="bg-buttons text-white text-xl font-thin px-12 py-6 mb-3 cursor-pointer w-full">
+          <button className="bg-buttons text-white text-xl font-thin px-12 py-6 mb-3 cursor-pointer w-full transform hover:scale-110 transition-all">
             about me
           </button>
         </Link>
         <Link to="/projects">
-          <button className="bg-buttons text-white text-xl font-thin px-12 py-6 mb-3 cursor-pointer w-full">
+          <button className="bg-buttons text-white text-xl font-thin px-12 py-6 mb-3 cursor-pointer w-full transform hover:scale-110 transition-all">
             projects / my work
           </button>
         </Link>
         <Link to="/contact">
-          <button className="bg-buttons text-white text-xl font-thin px-12 py-6 cursor-pointer w-full">
+          <button className="bg-buttons text-white text-xl font-thin px-12 py-6 cursor-pointer w-full transform hover:scale-110 transition-all">
             contact
           </button>
         </Link>
