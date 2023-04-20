@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import treesBackground from '../Assets/Images/trees.png';
+import treesBackground from '../Assets/CompressedImgs/trees-min.png';
 
 function Hero() {
   return (
