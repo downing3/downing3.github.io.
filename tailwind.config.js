@@ -7,6 +7,7 @@ module.exports = {
           "buttons": "#AA4646",
           "main": "#4B3F36",
           "sage": "#C6C8BD",
+          "red": "#FF0000",
         },
       },
     },
