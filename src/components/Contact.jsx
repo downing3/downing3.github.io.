@@ -15,7 +15,7 @@ function Contact() {
       <div className="fixed top-0 left-0 right-0">
         <RedNavbar />
       </div>
-      <div className="text-center mt-20">
+      <div className="text-left mt-20 ml-10">
         <p className="text-white font-light text-7xl mb-20 -mt-48">contact me</p>
         <p className="text-white font-thin text-5xl mb-10">
           email: downing3@bu.edu

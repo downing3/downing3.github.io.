@@ -1,35 +1,40 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import treesBackground from '../Assets/CompressedImgs/trees-min.png';
+import React from "react";
+import RedNavbar from "./RedNavbar";
+import bg from "../Assets/Images/main.png";
 
-function Hero() {
+function Contact() {
   return (
     <div
-      className="h-screen bg-center bg-cover flex flex-col justify-start items-center pt-10"
-      style={{ backgroundImage: `url(${treesBackground})` }}
+      className="bg-sage h-screen flex flex-col justify-center items-start"
+      style={{
+        backgroundImage: `url(${bg})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
-      <div className="text-white text-center text-7xl font-thin italic mt-16 pb-12 mb-10">
-        <h1>naomi mendocino downing</h1>
+      <div className="fixed top-0 left-0 right-0">
+        <RedNavbar />
       </div>
-      <div className="flex flex-col space-y-4">
-        <Link to="/about">
-          <button className="bg-buttons text-white text-xl font-thin px-12 py-6 mb-3 cursor-pointer w-full transform hover:scale-110 transition-all">
-            about me
-          </button>
-        </Link>
-        <Link to="/projects">
-          <button className="bg-buttons text-white text-xl font-thin px-12 py-6 mb-3 cursor-pointer w-full transform hover:scale-110 transition-all">
-            projects / my work
-          </button>
-        </Link>
-        <Link to="/contact">
-          <button className="bg-buttons text-white text-xl font-thin px-12 py-6 cursor-pointer w-full transform hover:scale-110 transition-all">
-            contact
-          </button>
-        </Link>
+      <div className="ml-20">
+        <p className="text-white font-light text-7xl mb-20 -mt-38">contact me</p>
+        <p className="text-white font-thin text-5xl mb-10">
+          email: downing3@bu.edu
+        </p>
+        <a
+          className="text-white font-thin text-5xl hover:text-buttons transition-colors duration-300 mb-4 pb-5 block"
+          href="https://www.linkedin.com/in/naomi-downing"
+        >
+          LinkedIn
+        </a>
+        <a
+          className="text-white font-thin text-5xl hover:text-buttons transition-colors duration-300 block"
+          href="https://github.com/downing3"
+        >
+          GitHub
+        </a>
       </div>
     </div>
   );
 }
 
-export default Hero;
+export default Contact;
