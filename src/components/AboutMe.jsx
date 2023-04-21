@@ -15,7 +15,7 @@ function AboutMe() {
         </div>
         <div className="w-full">
           <div className="text-left ml-8 mr-80 mt-12">
-            <p className="text-5xl sm:text-5xl md:text-5xl lg:text-5xl -mt-80 text-white font-thin bg-black">
+            <p className="text-5xl sm:text-4xl md:text-5xl lg:text-5xl -mt-80 text-white font-thin bg-black">
               who am i?
             </p>
           </div>
