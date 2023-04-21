@@ -33,7 +33,7 @@ function Photography() {
         backgroundSize: "80%", // adjust to control image size
         backgroundPosition: "center", 
         backgroundRepeat: "no-repeat", 
-        backgroundColor: "white",
+        backgroundColor: "black",
       }}
     >
       <RedNavbar />
@@ -46,7 +46,7 @@ function Photography() {
                 className="w-full h-auto object-cover"
                 alt={image.alt}
               />
-              <p className="text-center font-light text-black bg-transparent mt-4">
+              <p className="text-center font-light text-white bg-transparent mt-4">
                 {image.caption}
               </p>
             </div>

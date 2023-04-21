@@ -14,7 +14,7 @@ function Footer() {
         <a
             className="hover:text-buttons transition-colors duration-300"
             href={resume}
-            download="naomidowningresume.pdf"
+            download="NaomiDowning-Resume"
         >
             resume
         </a>

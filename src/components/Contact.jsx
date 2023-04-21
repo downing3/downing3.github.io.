@@ -1,6 +1,7 @@
 import React from "react";
 import RedNavbar from "./RedNavbar";
 import bg from "../Assets/Images/main.png";
+import resume from "../Assets/Files/Resume.pdf";
 
 function Contact() {
   return (
@@ -27,10 +28,17 @@ function Contact() {
           LinkedIn
         </a>
         <a
-          className="text-white font-thin text-5xl hover:text-buttons transition-colors duration-300 block"
+          className="text-white font-thin text-5xl hover:text-buttons transition-colors duration-300 mb-4 pb-5 block"
           href="https://github.com/downing3"
         >
           GitHub
+        </a>
+        <a
+          className="text-white font-thin text-5xl hover:text-buttons transition-colors duration-300 block"
+          href={resume}
+            download="NaomiDowning-Resume"
+        >
+            Resume
         </a>
       </div>
     </div>
