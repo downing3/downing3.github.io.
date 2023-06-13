@@ -6,6 +6,8 @@ import AboutText from "./AboutText";
 function AboutMe() {
   const [showAboutText, setShowAboutText] = useState(true);
   const [showSkillsInterests, setShowSkillsInterests] = useState(false);
+  const [isSkillsHovered, setIsSkillsHovered] = useState(false);
+  const [isInterestsHovered, setIsInterestsHovered] = useState(false);
 
   useEffect(() => {
     const aboutTextTimeout = setTimeout(() => {
@@ -22,9 +24,6 @@ function AboutMe() {
     opacity: showAboutText ? 1 : 0,
     transition: "opacity 1s ease-out"
   };
-
-  const [isSkillsHovered, setIsSkillsHovered] = useState(false);
-  const [isInterestsHovered, setIsInterestsHovered] = useState(false);
 
   const handleSkillsHover = () => {
     setIsSkillsHovered(true);
@@ -43,18 +42,21 @@ function AboutMe() {
   };
 
   const skillsStyles = {
-    fontSize: "7xl",
+    fontSize: "5xl",
     fontWeight: "light",
+    color: "white",
+    cursor: "pointer"
   };
 
   const interestsStyles = {
-    fontSize: "7xl",
+    fontSize: "5xl",
     fontWeight: "light",
-    marginTop: "8px",
+    color: "white",
+    cursor: "pointer"
   };
 
-  const skillsText = "Python, Java, React, Figma";
-  const interestsText = "Music, Art, Fitness, Hiking, Travel, Memoirs";
+  const skillsText = "Python, Java, HTML, CSS, Javascript, React, Figma";
+  const interestsText = "Music, Art, Fitness, Travel, Memoirs";
 
   return (
     <>
@@ -73,23 +75,31 @@ function AboutMe() {
             {showSkillsInterests && (
               <div className="mt-10">
                 <p
-                  className="text-5xl sm:text-5xl md:text-7xl lg:text-7xl text-black font-light"
+                  className="text-5xl sm:text-5xl md:text-7xl lg:text-7xl text-white font-light"
                   style={skillsStyles}
                   onMouseEnter={handleSkillsHover}
                   onMouseLeave={handleSkillsLeave}
                 >
                   skills
                 </p>
-                {isSkillsHovered && <p>{skillsText}</p>}
+                {isSkillsHovered && (
+                  <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black p-4 rounded text-center">
+                    <p className="text-white text-lg">{skillsText}</p>
+                  </div>
+                )}
                 <p
-                  className="text-5xl sm:text-5xl md:text-7xl lg:text-7xl text-black font-light pt-8"
+                  className="text-5xl sm:text-5xl md:text-7xl lg:text-7xl text-white font-light mt-8"
                   style={interestsStyles}
                   onMouseEnter={handleInterestsHover}
                   onMouseLeave={handleInterestsLeave}
                 >
                   interests
                 </p>
-                {isInterestsHovered && <p>{interestsText}</p>}
+                {isInterestsHovered && (
+                  <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black p-4 rounded text-center">
+                    <p className="text-white text-lg">{interestsText}</p>
+                  </div>
+                )}
               </div>
             )}
           </div>
