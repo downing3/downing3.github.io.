@@ -19,14 +19,14 @@ function AboutMe() {
               Who Am I?
             </p>
           </div>
-          <div className="mt-5 mx-12">
+          <div className="mt-5 mx-20">
             <AboutText />
           </div>
           <div className="container mx-auto mt-8">
 
           <div className="text-black mb-4 p-4">
             <p className="text-5xl sm:text-4xl md:text-5xl lg:text-5xl font-thin">
-                <span className="bg-white">Skills</span>
+                <span className="text-white bg-black">Skills</span>
             </p>
             <p className="text-2xl mt-4 font-light">
               <span className="bg-white">- Python, Java, CSS, HTML, Javascript, React, Figma, Microsoft Office</span>
@@ -37,7 +37,7 @@ function AboutMe() {
 
           <div className="text-black mb-4 p-4">
             <p className="text-5xl sm:text-4xl md:text-5xl lg:text-5xl font-thin">
-              <span className="bg-white">Education</span>
+              <span className="text-white bg-black">Education</span>
             </p>
             <p className="mt-4 font-light">
               <span className="text-2xl bg-white">- Boston University (2020-2024)</span><br />
@@ -57,7 +57,7 @@ function AboutMe() {
 
           <div className="text-black mb-4 p-4 mt-10">
             <p className="text-5xl sm:text-4xl md:text-5xl lg:text-5xl font-thin">
-              <span className="bg-white">Interests</span>
+              <span className="text-white bg-black">Interests</span>
             </p>
             <p className="text-2xl mt-4 font-light">
               <span className="bg-white">- Music, some of my favorite artists are: Bon Iver, Phoebe Bridgers, and Lorde.</span><br />
