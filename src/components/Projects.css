@@ -1,0 +1,12 @@
+/* Projects.css */
+.project-link {
+  transition: opacity 0.3s ease;
+}
+
+.hover-effect:hover .project-link {
+  opacity: 0.2;
+}
+
+.hover-effect .project-link:hover {
+  opacity: 1;
+}

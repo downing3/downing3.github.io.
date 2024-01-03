@@ -1,0 +1,12 @@
+.hover-effect .hero-button {
+    transition: opacity 0.3s ease;
+  }
+  
+  .hover-effect:hover .hero-button {
+    opacity: 0.2;
+  }
+  
+  .hover-effect .hero-button:hover {
+    opacity: 1;
+  }
+  

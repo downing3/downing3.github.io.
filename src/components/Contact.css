@@ -1,0 +1,13 @@
+/* Contact.css */
+.hover-effect .contact-item {
+    transition: opacity 0.3s ease;
+  }
+  
+  .hover-effect:hover .contact-item {
+    opacity: 0;
+  }
+  
+  .hover-effect .contact-item:hover {
+    opacity: 1;
+  }
+  

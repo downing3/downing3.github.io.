@@ -4,7 +4,10 @@ import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Photography from "./components/Photography";
-import Blog from "./components/Blog";
+import Dibs from "./components/Dibs";
+import DibsTwo from "./components/DibsTwo";
+import Mbta from "./components/Mbta";
+
 
 function App() {
   return (
@@ -13,9 +16,11 @@ function App() {
         <Route exact path="/" element={<Hero />} />
         <Route exact path="/about" element={<AboutMe />} />
         <Route exact path="/projects" element={<Projects />} />
-        <Route exact path="/blog" element={<Blog />} />
         <Route exact path="/contact" element={<Contact />} />
         <Route exact path="/photography" element={<Photography />} />
+        <Route exact path="/dibs" element={<Dibs />} />
+        <Route exact path="/dibstwo" element={<DibsTwo />} />
+        <Route exact path="/Mbta" element={<Mbta />} />
       </Routes>
     </BrowserRouter>
   );
