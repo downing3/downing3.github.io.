@@ -23,6 +23,11 @@ function Hero() {
             projects
           </button>
         </Link>
+        <Link to="/photography">
+          <button className="hero-button text-white text-xl font-bold px-12 py-5 mb-3 cursor-pointer w-full transform transition-all">
+            photography
+          </button>
+        </Link>
         <Link to="/contact">
           <button className="hero-button text-white text-xl font-bold px-12 py-5 cursor-pointer w-full transform transition-all">
             contact

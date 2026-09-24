@@ -7,6 +7,7 @@ import Photography from "./components/Photography";
 import Dibs from "./components/Dibs";
 import DibsTwo from "./components/DibsTwo";
 import Mbta from "./components/Mbta";
+import ProcureToPay from "./components/ProcureToPay";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route exact path="/dibs" element={<Dibs />} />
         <Route exact path="/dibstwo" element={<DibsTwo />} />
         <Route exact path="/Mbta" element={<Mbta />} />
+        <Route exact path="/procuretopay" element={<ProcureToPay />} />
       </Routes>
     </BrowserRouter>
   );

@@ -2,6 +2,11 @@ import React from "react";
 import DarkNavbar from "./DarkNavbar";
 import DarkFooter from "./DarkFooter";
 import img from "../Assets/Images/mbta.png";
+import signInImg from "../Assets/Images/mbta-signin.png";
+import homeMapImg from "../Assets/Images/mbta-home-map.png";
+import subwayLinesImg from "../Assets/Images/mbta-subway-lines.png";
+import commuterRailLinesImg from "../Assets/Images/mbta-commuter-rail-lines.png";
+import greenLineScheduleImg from "../Assets/Images/mbta-green-line-schedule.png";
 
 
 
@@ -77,17 +82,58 @@ function Mbta() {
         <hr className="border-t border-black mx-auto" style={{ width: '20%' }} />
       </div>
 
+      <div className="text-center mt-8 px-10 text-black">
+        <h2 className="text-3xl font-bold mb-4">Selected Screens</h2>
+        <p className="text-lg mx-auto max-w-3xl mb-16">
+          A closer look at some of the key screens from the app.
+        </p>
 
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-10 text-left">
+          <div>
+            <img
+              src={signInImg}
+              alt="Sign in screen"
+              className="w-full rounded-lg shadow-md border border-gray-200"
+            />
+            <p className="text-center text-sm text-gray-500 mt-4">Sign In</p>
+          </div>
 
-      <div className="text-center mt-28 mb-28">
-        <a
-          href="https://www.figma.com/file/uEinSaA0OW9tdjPukbzSlf/Untitled?type=design&node-id=0%3A1&mode=design&t=7PZ3DjrIXcr8tWnq-1"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-white text-black py-6 px-12 rounded-full"
-        >
-          View Final Prototype
-        </a>
+          <div>
+            <img
+              src={homeMapImg}
+              alt="Home map screen"
+              className="w-full rounded-lg shadow-md border border-gray-200"
+            />
+            <p className="text-center text-sm text-gray-500 mt-4">Home &amp; Map</p>
+          </div>
+
+          <div>
+            <img
+              src={subwayLinesImg}
+              alt="Subway line picker screen"
+              className="w-full rounded-lg shadow-md border border-gray-200"
+            />
+            <p className="text-center text-sm text-gray-500 mt-4">Subway Lines</p>
+          </div>
+
+          <div>
+            <img
+              src={commuterRailLinesImg}
+              alt="Commuter Rail line picker screen"
+              className="w-full rounded-lg shadow-md border border-gray-200"
+            />
+            <p className="text-center text-sm text-gray-500 mt-4">Commuter Rail Lines</p>
+          </div>
+
+          <div>
+            <img
+              src={greenLineScheduleImg}
+              alt="Green Line schedule screen"
+              className="w-full rounded-lg shadow-md border border-gray-200"
+            />
+            <p className="text-center text-sm text-gray-500 mt-4">Green Line Schedule</p>
+          </div>
+        </div>
       </div>
 
       <DarkFooter/>

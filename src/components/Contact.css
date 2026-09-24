@@ -1,13 +1,17 @@
-/* Contact.css */
-.hover-effect .contact-item {
-    transition: opacity 0.3s ease;
-  }
-  
-  .hover-effect:hover .contact-item {
-    opacity: 0;
-  }
-  
-  .hover-effect .contact-item:hover {
-    opacity: 1;
-  }
-  
+/* Adjust this CSS to match the style of Hero and Projects */
+
+.contact-link {
+  font-size: 20px; /* Adjust as needed */
+  color: white; /* Example color */
+  padding: 10px; /* Adjust as needed */
+  border-radius: 5px; /* Example border-radius */
+  transition: opacity 0.3s ease;
+}
+
+.hover-effect:hover .contact-link {
+  opacity: 0.2;
+}
+
+.hover-effect .contact-link:hover {
+  opacity: 1;
+}

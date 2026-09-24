@@ -2,10 +2,21 @@ import React from "react";
 import dibsimg from "../Assets/Images/dibs.png";
 import stickie from "../Assets/Images/stickie.jpeg";
 import proto from "../Assets/Images/proto.jpeg";
+import flowItemType from "../Assets/Images/dibs-flow-item-type.png";
+import flowMapListView from "../Assets/Images/dibs-flow-map-list-view.png";
+import flowConfirmPost from "../Assets/Images/dibs-flow-confirm-post.png";
+import flowUploadImage from "../Assets/Images/dibs-flow-upload-image.png";
 import DarkNavbar from "./DarkNavbar";
 import { Pie } from 'react-chartjs-2';
 import 'chart.js/auto';
 import DarkFooter from "./DarkFooter";
+import pressBostonCom from "../Assets/Images/dibs-press-bostoncom.png";
+import pressGlobe from "../Assets/Images/dibs-press-globe.png";
+import pressStooping from "../Assets/Images/dibs-press-stooping.png";
+import finalScreens from "../Assets/Images/dibs-final-screens.png";
+import iteration1 from "../Assets/Images/dibs-iteration1.png";
+import iteration2 from "../Assets/Images/dibs-iteration2.png";
+import iteration3 from "../Assets/Images/dibs-iteration3.png";
 
 function Dibs() {
     const pieChartData = (filledPercentage) => ({
@@ -62,6 +73,24 @@ function Dibs() {
         <p className="text-lg mx-auto"> 
           In 2022, my best friend and I lived off-campus in Boston. During this time we experienced two move-out periods - this is when we realized how large of an issue waste production during moving periods is. The town of Allston had even coined a term "Allston Christmas", a time when college students, riddled with unwanted items, would leave them on the streets, hoping someone would find their lightly-used items and take them home. We recognized the need for a more-organized system to aid students in their disposal and collection, and thus came 'dibs!', our solution.
         </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+          <img
+            src={pressBostonCom}
+            alt="Boston.com article: A brief guide to staying sane during the madness of Allston Christmas"
+            className="w-full"
+          />
+          <img
+            src={pressGlobe}
+            alt="Boston Globe article: Confessions of an Allston Christmas newbie"
+            className="w-full"
+          />
+          <img
+            src={pressStooping}
+            alt="Article: Allston Christmas every week, a guide to greater Boston stooping"
+            className="w-full"
+          />
+        </div>
       </div>
 
       <div className="my-20 text-center">
@@ -150,7 +179,7 @@ function Dibs() {
       <hr className="my-20 border-t border-gray-200" />
 
       <div className="text-center mt-8 px-10"> 
-        <h2 className="text-3xl font-bold mb-4">Brainstorming & Prototypes</h2>
+        <h2 className="text-3xl font-bold mb-4">Project Scoping & Initial Sketches</h2>
       </div>
 
       <div className="text-center mt-12">
@@ -177,6 +206,122 @@ function Dibs() {
 
       <div className="text-center mt-8 px-10"> 
         <h2 className="text-3xl font-bold mb-4">User Flowcharts & LoFi Prototypes</h2>
+        <p className="text-lg mx-auto max-w-3xl mb-16 mt-4">
+          Before building out the high-fidelity designs, I mapped out the core user flows and sketched low-fidelity wireframes to work through the logic and layout of each feature.
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div>
+            <img
+              src={flowItemType}
+              alt="User flow and wireframes for specifying item type when posting"
+              className="mx-auto"
+              style={{ maxWidth: '100%', height: 'auto' }}
+            />
+          </div>
+
+          <div>
+            <img
+              src={flowMapListView}
+              alt="User flow and wireframes for viewing items by map or list"
+              className="mx-auto"
+              style={{ maxWidth: '100%', height: 'auto' }}
+            />
+          </div>
+
+          <div>
+            <img
+              src={flowConfirmPost}
+              alt="User flow and wireframes for confirming a post before submitting"
+              className="mx-auto"
+              style={{ maxWidth: '100%', height: 'auto' }}
+            />
+          </div>
+
+          <div>
+            <img
+              src={flowUploadImage}
+              alt="User flow and wireframes for the upload step when posting"
+              className="mx-auto"
+              style={{ maxWidth: '100%', height: 'auto' }}
+            />
+          </div>
+        </div>
+      </div>
+
+      <hr className="my-20 border-t border-gray-200" />
+
+      <div className="text-center mt-8 px-10">
+        <h2 className="text-3xl font-bold mb-4">Iteration 1</h2>
+        <p className="text-lg mx-auto max-w-3xl mb-16 mt-4">
+          The first round of high-fidelity designs explored a teal and yellow color palette with a hamburger navigation menu.
+        </p>
+        <img
+          src={iteration1}
+          alt="First iteration of high-fidelity screens for dibs, in a teal and yellow color palette"
+          className="mx-auto"
+          style={{ maxWidth: '100%', height: 'auto' }}
+        />
+      </div>
+
+      <hr className="my-20 border-t border-gray-200" />
+
+      <div className="text-center mt-8 px-10">
+        <h2 className="text-3xl font-bold mb-4">Iteration 2</h2>
+        <p className="text-lg mx-auto max-w-3xl mb-16 mt-4">
+          The second iteration moved toward a more minimal layout with a sage green accent color.
+        </p>
+        <img
+          src={iteration2}
+          alt="Second iteration of high-fidelity screens for dibs, in a sage green and neutral color palette"
+          className="mx-auto"
+          style={{ maxWidth: '100%', height: 'auto' }}
+        />
+      </div>
+
+      <hr className="my-20 border-t border-gray-200" />
+
+      <div className="text-center mt-8 px-10">
+        <h2 className="text-3xl font-bold mb-4">Solution Validation</h2>
+        <p className="text-lg mx-auto max-w-3xl mb-16 mt-4">
+          Before moving into development, a solution survey was run to test the homepage and post-item page mockups.
+        </p>
+      </div>
+
+      <div className="flex justify-center items-center space-x-4 mt-4">
+        <div style={pieChartStyle}>
+          <Pie data={pieChartData(92)} />
+        </div>
+        <div style={pieChartStyle}>
+          <Pie data={pieChartData(82)} />
+        </div>
+        <div style={pieChartStyle}>
+          <Pie data={pieChartData(97)} />
+        </div>
+      </div>
+
+      <div className="text-center mt-16 px-10">
+        <ul className="list-disc mx-10 text-left inline-block">
+          <li>92% liked the layout of the homepage</li>
+          <li>82% found the post-item page intuitive</li>
+          <li>The large majority of respondents said they'd use dibs! to both dispose of and find items, rather than just one or the other</li>
+          <li>The most-requested piece of info before claiming a free item was its condition, followed by location and price</li>
+        </ul>
+      </div>
+
+      <hr className="my-20 border-t border-gray-200" />
+
+      <div className="text-center mt-8 px-10">
+        <h2 className="text-3xl font-bold mb-4">Iteration 3</h2>
+        <p className="text-lg mx-auto max-w-3xl mb-16 mt-4">
+          Incorporating feedback from the solution survey, the third iteration settled on a clean black-and-white palette that carried through to the final designs.
+        </p>
+        <img
+          src={iteration3}
+          alt="Third iteration of high-fidelity screens for dibs, in a black and white color palette"
+          className="mx-auto"
+          style={{ maxWidth: '100%', height: 'auto' }}
+        />
       </div>
 
       <hr className="my-20 border-t border-gray-200" />
@@ -202,6 +347,21 @@ function Dibs() {
             <p>Personalize your search and explore targeted furniture options by applying tags such as color, condition, or item type. Refine your search results to eliminate irrelevant listings, ensuring that the furniture presented to you aligns closely with your desired criteria. It's a powerful feature that saves you time and allows you to focus on finding the perfect furniture pieces that match your unique preferences.</p>
           </li>
         </ol>
+      </div>
+
+      <hr className="my-20 border-t border-gray-200" />
+
+      <div className="text-center mt-8 px-10">
+        <h2 className="text-3xl font-bold mb-4">Final Designs</h2>
+        <p className="text-lg mx-auto max-w-3xl mb-16 mt-4">
+          Incorporating feedback from the solution survey, here are the final high-fidelity screens for browsing items, posting a new item, and viewing an item's details.
+        </p>
+        <img
+          src={finalScreens}
+          alt="Final high-fidelity screens for the homepage, post item form, and item details page"
+          className="mx-auto"
+          style={{ maxWidth: '100%', height: 'auto' }}
+        />
       </div>
 
       <div className="text-center mt-28 mb-28">

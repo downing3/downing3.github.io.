@@ -3,7 +3,7 @@ import NavBar from "./WhiteNavbar";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import b from "../Assets/Images/fijiBeach.png";
-import './Projects.css'; // Make sure this CSS file is correctly linked
+import './Projects.css'; 
 
 function Projects() {
   return (
@@ -22,13 +22,16 @@ function Projects() {
       <div className="flex-1 flex flex-col justify-center items-center pt-24">
         <div className="flex flex-col items-center justify-center hover-effect">
           <Link to="/dibs" className="project-link text-3xl text-white mb-5 cursor-pointer text-center">
-            dibs web app: reducing waste on college campuses
+            dibs web application
           </Link>
           <Link to="/dibstwo" className="project-link text-3xl text-white mb-5 cursor-pointer text-center">
-            dibs mobile: reducing waste on college campuses
+            dibs mobile application
           </Link>
           <Link to="/Mbta" className="project-link text-3xl text-white mb-5 cursor-pointer text-center">
             public transportation product re-design
+          </Link>
+          <Link to="/procuretopay" className="project-link text-3xl text-white mb-5 cursor-pointer text-center">
+            procure to pay website re-design
           </Link>
         </div>
       </div>
